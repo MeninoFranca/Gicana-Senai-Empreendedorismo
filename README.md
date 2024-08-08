@@ -1,3 +1,8 @@
-Plataforma de Feedback Rápido para Novos Negócios
+# React + Vite
 
-Descrição: Uma aplicação web onde empreendedores podem postar ideias de negócios e receber feedback de outros usuários.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
