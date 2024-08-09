@@ -21,11 +21,12 @@ const Idea = sequelize.define('Idea', {
       allowNull: false,
   },
   user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-          model: 'users', 
-          key: 'id',
-      },
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'users',
+      key: 'id',
+    },
+    field: 'user_id', 
   },
   created_at: {
       type: DataTypes.DATE,
