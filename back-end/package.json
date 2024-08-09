@@ -11,7 +11,10 @@
   "description": "",
   "dependencies": {
     "back-end": "file:",
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
+    "h2": "^0.3.0",
+    "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.0",
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7"
