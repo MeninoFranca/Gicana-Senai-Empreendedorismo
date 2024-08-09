@@ -1,5 +1,7 @@
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const JWT_SECRET = crypto.randomBytes(32).toString('hex');
 
 
 const newUser = async (userData) => {
@@ -31,12 +33,19 @@ const loginUser = async(email,password) => {
         if (!isPassworValid) {
             throw new Error('Usuário ou senha incorretos');
         }
-        return User;
-        console.log(User);
-} catch (error) {
-    throw new Error('Não foi possível realizar o login');
-}
-}
+
+
+        const token = jwt.sign(
+            { userId: user.id, username: user.username },
+            JWT_SECRET, 
+            { expiresIn: 1800 } 
+        );
+
+        return { user, token }; 
+    } catch (error) {
+        throw new Error('Não foi possível realizar o login');
+    }
+};
 
 module.exports = {
     newUser,
