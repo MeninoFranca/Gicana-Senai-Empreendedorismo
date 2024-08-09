@@ -5,9 +5,15 @@ const ideaRoutes = require('./routes/ideaRoutes');
 const commentRoutes = require('./routes/commentRoutes');
 const likeRoutes = require('./routes/likeRoutes');
 const userRoutes = require('./routes/userRoutes')
+const cors = require('cors');
+
 
 const app = express();
 app.use(bodyParser.json());
+
+app.use(cors({
+  origin:'*'
+}))
 
 app.use('/users', userRoutes);
 

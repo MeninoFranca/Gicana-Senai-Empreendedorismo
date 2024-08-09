@@ -16,6 +16,8 @@ const newUser = async (userData) => {
             });
             return newUser;
     } catch (error) {
+        console.log(userData)
+        console.log(error)
         throw new Error('Não foi possível criar a sua conta')
     }
 };

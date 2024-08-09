@@ -5,7 +5,7 @@ const router = express.Router();
 router.post('/register', async(req,res) =>{
     try {
         const user = await newUser(req.body);
-        res.status(201).json(newUser)
+        res.status(201).json(user)
     } catch (error){
         res.status(500).json({ error: error.message });
     }
