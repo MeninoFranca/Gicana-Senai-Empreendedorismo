@@ -1,0 +1,196 @@
+.auth-div{
+    background-color: #fff;
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    box-shadow: -6px 5px 3px #6fafbe;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.auth-wrapper{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 20%;
+    z-index: 0;
+    transition: left 2s;
+    left:0%;
+
+}
+
+.auth-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    transition: left 2s;
+    left:0%;
+
+}
+
+.auth-title{
+    grid-row: 1;
+    justify-self: center;
+}
+
+.auth-content{
+    grid-row: 2;
+    justify-self: center;
+    grid-template-rows: 100%;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    top: 60%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #003249;
+    height: auto;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.auth-form{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    top: 13%;
+    display: grid;
+    grid-template-rows: 100% 100%;
+}
+
+.auth-email{
+    position: relative;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    left: 3.5%;
+    width: 90%;
+    height: 15%;
+    outline: none;
+    padding: 1%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+    border: 2px solid #000;
+
+}
+
+.auth-name{
+    position: relative;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    left: 3.5%;
+    width: 90%;
+    height: 15%;
+    outline: none;
+    padding: 1%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+    border: 2px solid #000;
+    display:none;
+}
+
+.auth-password{
+    position: relative;
+    left: 3.5%;
+    border-radius: 15px;
+    width: 90%;
+    height: 15%;
+    outline: none;
+    padding: 1%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+    border: 2px solid #000;
+    margin-bottom: 5%;
+}
+
+.auth-login{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #1c836d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #fff;
+    font-weight: 550;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: none;
+}
+
+.auth-register{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: #1c836d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #fff;
+    font-weight: 550;
+    border: none;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.confirm{
+    display: none;
+}
+
+.auth-inputs{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
+.auth-buttons{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.auth-forgot{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 550;
+    color: transparent;
+    justify-self: center;
+    top: -50%;
+}
+
+.auth-return{
+    position: absolute;
+    top: 18%;
+    left: 26%;
+    width: 2%;
+    height: 4%;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    z-index: 3;
+    display: none;
+}
+
+.auth-error{
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    color: #ff0000;
+}
